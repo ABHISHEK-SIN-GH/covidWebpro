@@ -1,0 +1,154 @@
+*{  margin: 0px;
+    padding-top: 0px;
+}
+
+.logo img
+{
+    height: 40px;
+    width: 60px;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    min-height: 10vh;
+    background-color: #5d4954;
+    font-family: 'Krona One', sans-serif;
+    text-decoration-color: white;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+}
+
+.nav-links a{
+    color: white;
+    letter-spacing: 3px;
+    font-weight: 80;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.burger{
+    display: none;
+}
+
+.burger div
+{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all ease 0.3s;
+}
+
+@media screen and (max-width:1024px)
+{
+    .nav-links{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:768px)
+{
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        width: 50%;
+        height: 62vh;
+        top: 10vh;
+        background-color: #5d4954;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links a{
+        font-size: 80%;
+        opacity: 0px;
+    }
+    .burger{
+        display: block;
+    }
+
+    
+    .text h1,p{
+    position: relative;
+    top: -200px;
+    bottom: 0;
+    left: 0;
+    right: 40px;
+    margin: 0px;
+    margin-top:60px ;
+    margin-right:280px;
+    font-size:40%;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from
+    {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1
+{
+    transform: rotate(-45deg translate(-5px,6px));
+}
+
+.toggle .line2
+{
+    opacity: 0;
+}
+
+.toggle .line3
+{
+    transform: rotate(45deg translate(-5px,-6px));
+}
+
+
+body
+{   
+    height: 100vh;
+    background-image: url(https://www.basw.co.uk/sites/default/files/styles/highlighted_tiny_x2/public/AdobeStock_320164385.jpeg?itok=RzOZAb0B&timestamp=1584114377);
+    background-size: cover;
+    background-repeat: none;
+   
+}
+  
+#particles-js{
+    background-size: cover;
+}
+
+.text
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top:350px ;
+    margin-left:90px;
+    font-size: 40px;
+  
+}
