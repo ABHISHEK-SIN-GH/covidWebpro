@@ -1,2 +1,2 @@
 # covidWebpro
-This data is fetched from goverment official websites.
+The data is fetched from Goverment's Official Website.
